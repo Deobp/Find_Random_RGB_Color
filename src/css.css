@@ -1,0 +1,52 @@
+#button1 {
+    border-radius: 50%;
+    width: 255px;
+    height: 255px;
+    outline: none;
+}
+
+#button2 {
+    border-radius: 50%;
+    width: 255px;
+    height: 255px;
+    outline: none;
+}
+
+#button3 {
+    border-radius: 50%;
+    width: 255px;
+    height: 255px;
+    outline: none;
+}
+
+#button4 {
+    border-radius: 50%;
+    width: 255px;
+    height: 255px;
+    outline: none;
+}
+
+#button5 {
+    border-radius: 50%;
+    width: 255px;
+    height: 255px;
+    outline: none;
+}
+
+#button6 {
+    border-radius: 50%;
+    width: 255px;
+    height: 255px;
+    outline: none;
+}
+
+#reset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 400px;
+    height: 120px;
+    margin: 20px;
+    font-size: 6rem;
+}
