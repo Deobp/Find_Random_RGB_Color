@@ -3,6 +3,8 @@
     width: 255px;
     height: 255px;
     outline: none;
+    border: solid;
+    margin: 0 auto;
 }
 
 #button2 {
@@ -10,6 +12,7 @@
     width: 255px;
     height: 255px;
     outline: none;
+    border: solid;
 }
 
 #button3 {
@@ -17,6 +20,7 @@
     width: 255px;
     height: 255px;
     outline: none;
+    border: solid;
 }
 
 #button4 {
@@ -24,6 +28,7 @@
     width: 255px;
     height: 255px;
     outline: none;
+    border: solid;
 }
 
 #button5 {
@@ -31,6 +36,7 @@
     width: 255px;
     height: 255px;
     outline: none;
+    border: solid;
 }
 
 #button6 {
@@ -38,15 +44,24 @@
     width: 255px;
     height: 255px;
     outline: none;
+    border: solid;
 }
 
 #reset {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+    border: solid;
     width: 400px;
     height: 120px;
     margin: 20px;
+    text-align: center;
     font-size: 6rem;
+    position: relative;
+    align: center;
+}
+
+p {
+    text-align: center;
+}
+
+div {
+    text-align: center;
 }

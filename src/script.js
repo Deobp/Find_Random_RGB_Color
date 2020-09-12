@@ -45,6 +45,13 @@ function chooseWinner() {
 function generate() {
     dynamicColor();
     par.textContent = `Can you find ${chooseWinner()} ?`;
+    status.textContent = ``;
+    document.getElementById('button1').removeAttribute('disabled');
+    document.getElementById('button2').removeAttribute('disabled');
+    document.getElementById('button3').removeAttribute('disabled');
+    document.getElementById('button4').removeAttribute('disabled');
+    document.getElementById('button5').removeAttribute('disabled');
+    document.getElementById('button6').removeAttribute('disabled');
 }
 
 par.textContent = `Can you find ${chooseWinner()} ?`;
@@ -54,49 +61,85 @@ par.textContent = `Can you find ${chooseWinner()} ?`;
 
 //list of functions for checking winners
 function button1Check() {
-    if (document.getElementById(`button${1}`).style.background == winner) {
+    if (document.getElementById('button1').style.background == winner) {
         status.textContent = `Congratulations!Your found correct color!`;
     } else {
         status.textContent = `Wrong! Try again!`;
     }
+    document.getElementById('button1').disabled = 'false';
+    document.getElementById('button2').disabled = 'false';
+    document.getElementById('button3').disabled = 'false';
+    document.getElementById('button4').disabled = 'false';
+    document.getElementById('button5').disabled = 'false';
+    document.getElementById('button6').disabled = 'false';
 }
 
 function button2Check() {
-    if (document.getElementById(`button${2}`).style.background == winner) {
+    if (document.getElementById('button2').style.background == winner) {
         status.textContent = `Congratulations!Your found correct color!`;
     } else {
         status.textContent = `Wrong! Try again!`;
     }
+    document.getElementById('button1').disabled = 'false';
+    document.getElementById('button2').disabled = 'false';
+    document.getElementById('button3').disabled = 'false';
+    document.getElementById('button4').disabled = 'false';
+    document.getElementById('button5').disabled = 'false';
+    document.getElementById('button6').disabled = 'false';
 }
 
 function button3Check() {
-    if (document.getElementById(`button${3}`).style.background == winner) {
+    if (document.getElementById('button3').style.background == winner) {
         status.textContent = `Congratulations!Your found correct color!`;
     } else {
         status.textContent = `Wrong! Try again!`;
     }
+    document.getElementById('button1').disabled = 'false';
+    document.getElementById('button2').disabled = 'false';
+    document.getElementById('button3').disabled = 'false';
+    document.getElementById('button4').disabled = 'false';
+    document.getElementById('button5').disabled = 'false';
+    document.getElementById('button6').disabled = 'false';
 }
 
 function button4Check() {
-    if (document.getElementById(`button${4}`).style.background == winner) {
+    if (document.getElementById('button4').style.background == winner) {
         status.textContent = `Congratulations!Your found correct color!`;
     } else {
         status.textContent = `Wrong! Try again!`;
     }
+    document.getElementById('button1').disabled = 'false';
+    document.getElementById('button2').disabled = 'false';
+    document.getElementById('button3').disabled = 'false';
+    document.getElementById('button4').disabled = 'false';
+    document.getElementById('button5').disabled = 'false';
+    document.getElementById('button6').disabled = 'false';
 }
 
 function button5Check() {
-    if (document.getElementById(`button${5}`).style.background == winner) {
+    if (document.getElementById('button5').style.background == winner) {
         status.textContent = `Congratulations!Your found correct color!`;
     } else {
         status.textContent = `Wrong! Try again!`;
     }
+    document.getElementById('button1').disabled = 'false';
+    document.getElementById('button2').disabled = 'false';
+    document.getElementById('button3').disabled = 'false';
+    document.getElementById('button4').disabled = 'false';
+    document.getElementById('button5').disabled = 'false';
+    document.getElementById('button6').disabled = 'false';
 }
 
 function button6Check() {
-    if (document.getElementById(`button${6}`).style.background == winner) {
+    if (document.getElementById('button6').style.background == winner) {
         status.textContent = `Congratulations!Your found correct color!`;
     } else {
         status.textContent = `Wrong! Try again!`;
     }
+    document.getElementById('button1').disabled = 'false';
+    document.getElementById('button2').disabled = 'false';
+    document.getElementById('button3').disabled = 'false';
+    document.getElementById('button4').disabled = 'false';
+    document.getElementById('button5').disabled = 'false';
+    document.getElementById('button6').disabled = 'false';
 }
