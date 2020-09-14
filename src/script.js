@@ -62,7 +62,7 @@ par.textContent = `Can you find ${chooseWinner()} ?`;
 //list of functions for checking winners
 function button1Check() {
     if (document.getElementById('button1').style.background == winner) {
-        status.textContent = `Congratulations!Your found correct color!`;
+        status.textContent = `Congratulations!You found correct color!`;
     } else {
         status.textContent = `Wrong! Try again!`;
     }
@@ -76,7 +76,7 @@ function button1Check() {
 
 function button2Check() {
     if (document.getElementById('button2').style.background == winner) {
-        status.textContent = `Congratulations!Your found correct color!`;
+        status.textContent = `Congratulations!You found correct color!`;
     } else {
         status.textContent = `Wrong! Try again!`;
     }
@@ -90,7 +90,7 @@ function button2Check() {
 
 function button3Check() {
     if (document.getElementById('button3').style.background == winner) {
-        status.textContent = `Congratulations!Your found correct color!`;
+        status.textContent = `Congratulations!You found correct color!`;
     } else {
         status.textContent = `Wrong! Try again!`;
     }
@@ -104,7 +104,7 @@ function button3Check() {
 
 function button4Check() {
     if (document.getElementById('button4').style.background == winner) {
-        status.textContent = `Congratulations!Your found correct color!`;
+        status.textContent = `Congratulations!You found correct color!`;
     } else {
         status.textContent = `Wrong! Try again!`;
     }
@@ -118,7 +118,7 @@ function button4Check() {
 
 function button5Check() {
     if (document.getElementById('button5').style.background == winner) {
-        status.textContent = `Congratulations!Your found correct color!`;
+        status.textContent = `Congratulations!You found correct color!`;
     } else {
         status.textContent = `Wrong! Try again!`;
     }
@@ -132,7 +132,7 @@ function button5Check() {
 
 function button6Check() {
     if (document.getElementById('button6').style.background == winner) {
-        status.textContent = `Congratulations!Your found correct color!`;
+        status.textContent = `Congratulations!You found correct color!`;
     } else {
         status.textContent = `Wrong! Try again!`;
     }
