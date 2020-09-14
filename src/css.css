@@ -48,20 +48,22 @@
 }
 
 #reset {
-    border: solid;
-    width: 400px;
-    height: 120px;
-    margin: 20px;
-    text-align: center;
+    border: transparent;
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
     font-size: 6rem;
-    position: relative;
-    align: center;
 }
 
 p {
     text-align: center;
+    font-size: 2rem;
 }
 
 div {
     text-align: center;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
