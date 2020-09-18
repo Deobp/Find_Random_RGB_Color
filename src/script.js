@@ -9,12 +9,16 @@ question.appendChild(par);
 document.getElementById('status').appendChild(status)
 
 reset.addEventListener('click', generate);
-colorButtons[0].addEventListener('click', button1Check);
-colorButtons[1].addEventListener('click', button2Check);
-colorButtons[2].addEventListener('click', button3Check);
-colorButtons[3].addEventListener('click', button4Check);
-colorButtons[4].addEventListener('click', button5Check);
-colorButtons[5].addEventListener('click', button6Check);
+
+colorButtons.map(item => item.addEventListener('click', function() {
+    colorButtons.map(item => item.disabled = 'false');
+    if (item.style.background == winner) {
+        status.textContent = `Congratulations!You found correct color!`;
+    } else {
+        status.textContent = `Wrong! Try again!`;
+    }
+
+}));
 
 function randomRgb() {
     return Math.round(Math.random() * (255 - 1) + 1);
@@ -40,58 +44,3 @@ function generate() {
 }
 
 par.textContent = `Can you find ${chooseWinner()} ?`;
-
-//list of functions for checking winners
-function button1Check() {
-    if (colorButtons[0].style.background == winner) {
-        status.textContent = `Congratulations!You found correct color!`;
-    } else {
-        status.textContent = `Wrong! Try again!`;
-    }
-    colorButtons.map(item => item.disabled = 'false');
-}
-
-function button2Check() {
-    if (colorButtons[1].style.background == winner) {
-        status.textContent = `Congratulations!You found correct color!`;
-    } else {
-        status.textContent = `Wrong! Try again!`;
-    }
-    colorButtons.map(item => item.disabled = 'false');
-}
-
-function button3Check() {
-    if (colorButtons[2].style.background == winner) {
-        status.textContent = `Congratulations!You found correct color!`;
-    } else {
-        status.textContent = `Wrong! Try again!`;
-    }
-    colorButtons.map(item => item.disabled = 'false');
-}
-
-function button4Check() {
-    if (colorButtons[3].style.background == winner) {
-        status.textContent = `Congratulations!You found correct color!`;
-    } else {
-        status.textContent = `Wrong! Try again!`;
-    }
-    colorButtons.map(item => item.disabled = 'false');
-}
-
-function button5Check() {
-    if (colorButtons[4].style.background == winner) {
-        status.textContent = `Congratulations!You found correct color!`;
-    } else {
-        status.textContent = `Wrong! Try again!`;
-    }
-    colorButtons.map(item => item.disabled = 'false');
-}
-
-function button6Check() {
-    if (colorButtons[5].style.background == winner) {
-        status.textContent = `Congratulations!You found correct color!`;
-    } else {
-        status.textContent = `Wrong! Try again!`;
-    }
-    colorButtons.map(item => item.disabled = 'false');
-}
