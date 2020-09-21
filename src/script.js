@@ -1,4 +1,4 @@
-let colorButtons = [document.getElementById('button1'), document.getElementById('button2'), document.getElementById('button3'), document.getElementById('button4'), document.getElementById('button5'), document.getElementById('button6')];
+let colorButtons = document.getElementsByClassName('buttons');
 let reset = document.getElementById('reset');
 let question = document.getElementById('question');
 let par = document.createElement('p');
@@ -10,23 +10,34 @@ document.getElementById('status').appendChild(status)
 
 reset.addEventListener('click', generate);
 
-colorButtons.map(item => item.addEventListener('click', function() {
-    colorButtons.map(item => item.disabled = 'false');
-    if (item.style.background == winner) {
-        status.textContent = `Congratulations!You found correct color!`;
-    } else {
-        status.textContent = `Wrong! Try again!`;
-    }
+for (let i = 0; i < colorButtons.length; i++) {
+    colorButtons[i].addEventListener('click', function() {
+        if (colorButtons[i].style.background == winner) {
+            status.textContent = `Congratulations!You found correct color!`;
+            disabledButtons()
+        } else {
+            status.textContent = `Wrong! Try again!`;
+            disabledButtons()
+        }
+    });
+}
 
-}));
+
+function disabledButtons() {
+    for (let i = 0; i < colorButtons.length; i++) {
+        colorButtons[i].disabled = 'false';
+    }
+}
 
 function randomRgb() {
     return Math.round(Math.random() * (255 - 1) + 1);
 }
 
 function dynamicColor() {
-    colorButtons.map(item => item.style.background = `rgb(${randomRgb()},${randomRgb()},${randomRgb()})`);
-}
+    for (let i = 0; i < colorButtons.length; i++) {
+        colorButtons[i].style.background = `rgb(${randomRgb()},${randomRgb()},${randomRgb()})`;
+    }
+};
 
 dynamicColor()
 
@@ -40,7 +51,9 @@ function generate() {
     dynamicColor();
     par.textContent = `Can you find ${chooseWinner()} ?`;
     status.textContent = ``;
-    colorButtons.map(item => item.removeAttribute('disabled'))
+    for (let i = 0; i < colorButtons.length; i++) {
+        colorButtons[i].removeAttribute('disabled');
+    }
 }
 
 par.textContent = `Can you find ${chooseWinner()} ?`;
